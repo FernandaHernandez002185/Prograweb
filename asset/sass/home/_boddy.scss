@@ -1,0 +1,71 @@
+@import"../colores";
+
+#boddy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 100%;
+}
+#menu{
+    width: 240px;
+    height: 100%;
+    border-right: 2px solid $primarylightcolor1;
+    background-color: $secundarycolorthree4;
+    padding: 10px;
+}
+
+#btn_ops{
+    width: 240px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+#btn_icon{
+    position: absolute;
+}
+#btn_ops_p1{
+    height: 100%;
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn_ops_p2{
+    height: 100%;
+    width: 75%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn_ops:hover{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#section1{
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid $primarylightcolor1;
+
+
+}
+
+#footer{
+    height: 65px;
+}
+
+h1{
+    padding: 5px;
+    margin: 5px;
+}
+
+#mapa_verde{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}

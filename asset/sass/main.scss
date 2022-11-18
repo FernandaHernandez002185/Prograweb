@@ -1,0 +1,14 @@
+@import "botones";
+@import "post";
+@import "./home/header";
+@import "./home/boddy";
+@import "colores";
+
+.Seccion_bottones{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}

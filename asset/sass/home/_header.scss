@@ -1,0 +1,82 @@
+@import"../colores";
+
+*{
+    background-color: $textcolor2;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 100%;
+}
+#nav_bar{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: auto;
+}
+
+#home{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#look_bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: $secundarycolorone1;
+}
+
+#buscador{
+    height: 38px;
+    width: 100%;
+    background-color: $textcolor2;
+    align-content: flex-start;
+    border-top: 1px solid $primarycolor4;
+    border-right: 1px solid $primarycolor4;
+    border-bottom: 1px solid $primarycolor4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: $secundarycolorone1;
+}
+
+#buscador_icon{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+    border-top: 1px solid $primarycolor4;
+    border-left: 1px solid $primarycolor4;
+    border-bottom: 1px solid $primarycolor4;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#profile_photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    -webkit-border-radius: 100rem;
+    -moz-border-radius: 100rem;
+    -ms-border-radius: 100rem;
+    -o-border-radius: 100rem;
+    display: flex;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width: 720px) {
+    *{
+      background-color: lightgreen;
+    }
+  }

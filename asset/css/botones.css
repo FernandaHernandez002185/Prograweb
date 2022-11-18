@@ -1,0 +1,323 @@
+* {
+  background-color: #AEBDCA;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*     !Clase de los botones   */
+.Botones {
+  height: 36px;
+  width: 120px;
+  border-radius: 10rem;
+  border: none;
+}
+
+/*     !ID de los botones   */
+/*      *Boton "Si"      */
+#btn_si {
+  background-color: #5DC592;
+  color: white;
+  cursor: pointer;
+  padding: 9px;
+}
+
+#btn_si:hover {
+  background-color: #55FDAB;
+  color: #000000;
+  cursor: pointer;
+}
+
+/*      *Boton "Cancelar"      */
+#btn_cancel {
+  background-color: #CF0000;
+  color: white;
+  cursor: pointer;
+  padding: 9px;
+}
+
+#btn_cancel:hover {
+  background-color: #ea433e;
+  color: #000000;
+  cursor: pointer;
+}
+
+/*      *Boton "Estandar"      */
+#btn_base {
+  background-color: #55FDAB;
+  color: white;
+  cursor: pointer;
+}
+
+#btn_base:hover {
+  background-color: white;
+  color: #55FDAB;
+  border: 1px solid #55FDAB;
+  cursor: pointer;
+}
+
+/*      *Boton "Opciones"      */
+#btn_ops {
+  width: 240px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+#btn_icon {
+  position: absolute;
+  background-color: #7AE9E0;
+}
+
+#btn_ops_p1 {
+  height: 100%;
+  width: 40%;
+  background: radial-gradient(#4DF3A2, #1CDBE7);
+  border-top-left-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn_ops_p2 {
+  height: 100%;
+  width: 75%;
+  background-color: white;
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn_ops:hover #btn_ops_p2 {
+  background-color: #CAEFDD;
+}
+#btn_ops:hover #btn_ops_p1 {
+  background-color: #8DECDF;
+}
+
+/*      *Boton "Cambiar foto"      */
+#btn_photo_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 250px;
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+  cursor: pointer;
+}
+
+#btn_image {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#btn_pic {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+#btn_photo_capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+}
+
+#btn_text {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  color: #000000;
+  font-size: 120px;
+}
+
+#btn_image:hover {
+  cursor: pointer;
+}
+#btn_image:hover #btn_text {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+#btn_image:hover #btn_photo_capa {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/*      *Boton "User post"      */
+#btn_user_post {
+  height: 200px;
+  width: 350px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#bt_user_header {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 0;
+}
+
+#btn_user_txt {
+  color: #000000;
+  background-color: white;
+  position: absolute;
+}
+
+#btn_user_body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: right;
+}
+
+#btn_picture {
+  width: 100%;
+  height: 100%;
+}
+
+#btn_user_body_img {
+  height: 100%;
+  width: 45%;
+}
+
+#btn_picture {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 3px;
+}
+
+#btn_user_body_text {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#btn_user_post:hover {
+  background: #1CDBE7;
+}
+#btn_user_post:hover #bt_user_header, #btn_user_post:hover #btn_user_txt {
+  background-color: #1CDBE7;
+}
+#btn_user_post:hover #btn_user_body_text {
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#btn_user_post:hover #btn_picture, #btn_user_post:hover #btn_user_body_img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#btn_user_post:hover #btn_user_body {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+/*      *Boton "Edicion de los elementos"      */
+#btn_user_post_edit {
+  height: 300px;
+  width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 9px;
+  cursor: pointer;
+}
+
+#bt_user_header_icon {
+  visibility: hidden;
+}
+
+#btn_user_post_edit:hover {
+  background: #1CDBE7;
+}
+#btn_user_post_edit:hover #bt_user_header, #btn_user_post_edit:hover #btn_user_txt {
+  background-color: #1CDBE7;
+}
+#btn_user_post_edit:hover #btn_user_body_text {
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#btn_user_post_edit:hover #btn_picture, #btn_user_post_edit:hover #btn_user_body_img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#btn_user_post_edit:hover #btn_user_body {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#btn_user_post_edit:hover #bt_user_header_icon {
+  visibility: inherit;
+  background-color: #1CDBE7;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  border-image-width: 25%;
+}/*# sourceMappingURL=botones.css.map */
