@@ -24,3 +24,21 @@
     align-items: center;
     margin: 15px;
 }
+
+#Post_back{
+    width: 50px;
+    display: flex;
+    align-content: space-around;
+}
+
+#Post_back a{
+    text-decoration: none;
+}
+
+#back{
+    display: flex;
+    align-content: space-between;
+    margin-left: 50px;
+    border: none;
+    cursor: pointer;
+}
