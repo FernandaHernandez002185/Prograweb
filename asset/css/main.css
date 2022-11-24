@@ -517,8 +517,8 @@ h5 {
 }
 
 footer {
-  position: -webkit-sticky;
-  position:static;
+  display: flex;
+  position:absolute;
   bottom: 0px;
 }
 
@@ -568,18 +568,6 @@ footer {
   height: 60%;
 }
 
-@media screen and (max-width: 760px) {
-  #post {
-    display: flex;
-    flex-direction: column;
-  }
-  #Post_part2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-  }
-}
 #home {
   height: 100%;
   width: 100%;
@@ -608,44 +596,44 @@ footer {
   
 .card {
   display: flex;
-  width: 1000px;
-  height: 400px;
-  background-color: #fff;
+  width:fit-content;
+  height:auto;
+  background-color: rgb(209, 209, 209);
   box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
   border-radius: 6px;
   overflow: hidden;
   position: relative;
-  top: -100px; left: 20px;
-  margin: 5rem;
+  top: -100px; left: 0px;
+  margin: 4.45rem;
 }
 
 .card h1 {
   text-align: center;
 }
-.card .additional {
-  display:flex;
-  position:absolute;
-  width: 150px;
-  height: 100%;
-  overflow: hidden;
+
+h1{
+  font-size: 4rem;
 }
-.card .additional  {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  float: left;
+p{
+  font-size:larger;
+  
 }
+
 .img{
-  object-fit: cover;
+  object-fit:fill;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
 }
 .card .general {
-  width: 600px;
-  height: 100%;
-  position: absolute;
+  width:100%;
+  position:relative;
   top: 0;
   right: 0;
   z-index: 1;
-  box-sizing: border-box;
+  box-sizing:border-box;
   padding: 1rem;
   padding-top: 0;
 }
@@ -655,4 +643,5 @@ footer {
   bottom: 1rem;
   right: 1rem;
   font-size: 1em;
+  
 }
