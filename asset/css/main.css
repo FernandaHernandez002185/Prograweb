@@ -596,7 +596,7 @@ footer {
   
 .card {
   display: flex;
-  width:fit-content;
+  width:auto;
   height:auto;
   background-color: rgb(209, 209, 209);
   box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
@@ -629,6 +629,7 @@ p{
 }
 .card .general {
   width:100%;
+  height:fit-content;
   position:relative;
   top: 0;
   right: 0;
