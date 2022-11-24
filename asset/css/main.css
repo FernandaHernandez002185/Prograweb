@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Abel');
 * {
   background-color: #FFFFFF;
   margin: 0;
@@ -517,7 +518,7 @@ h5 {
 
 footer {
   position: -webkit-sticky;
-  position: sticky;
+  position:static;
   bottom: 0px;
 }
 
@@ -599,4 +600,59 @@ footer {
   display: flex;
   align-items: center;
   background-color: #A6C9B8;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.center {
+  position:static;
+}
+  
+.card {
+  display: flex;
+  width: 1000px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  top: -100px; left: 20px;
+  margin: 5rem;
+}
+
+.card h1 {
+  text-align: center;
+}
+.card .additional {
+  display:flex;
+  position:absolute;
+  width: 150px;
+  height: 100%;
+  overflow: hidden;
+}
+.card .additional  {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  float: left;
+}
+.img{
+  object-fit: cover;
+}
+.card .general {
+  width: 600px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1em;
+}
