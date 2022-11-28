@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
-import * as ReactBootStrap from "react-bootstrap";
-import Footer from './components/Footer';
+import Profile from './components';
 
 function App() {
   return (
     <div className="page-container">
-        <div className='content-wrap'>
-            <Footer />
-        </div>
+      <Profile></Profile>
     </div>
 
   );
