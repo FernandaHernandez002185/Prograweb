@@ -1,29 +1,17 @@
-const app = require('./app');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-//const express = require("express");
-const mongoose = require("mongoose");
-require("dotenv").config();
-const userRoute = require("./routes/user"); //aqui se importan los usuarios
-const eventRoute = require("./routes/event"); 
-
-// middlewares
-app.use("/api", userRoute);
-app.use("/api", eventRoute);
-
-async function main(){
-    await app.listen(app.get('port'));
-    console.log("Server listening to", app.get('port'));
-}
-
-main();
-
-//rutas
-app.get("/", (req, res) => {
-    res.send("Bienvenido a mi API");
-});
-
-mongoose
-  .connect(process.env.MONGODB_URI)
-  .then(() => console.log("Conectado a MongoDB Atlas"))
-  .catch((error) => console.error(error)
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
