@@ -1,17 +1,24 @@
 import React from 'react';
-import './App.css';
-import * as ReactBootStrap from "react-bootstrap";
-import Footer from './components/Footer';
+import Footer from "./components/Footer/Footer";
+import Login from "./components/Login/Login";
 
-function App() {
-  return (
-    <div className="page-container">
-        <div className='content-wrap'>
-            <Footer />
-        </div>
-    </div>
 
-  );
-}
+const express = require("express");
+const cors =require("cors");
+const app = express();
 
-export default App;
+
+//Settings
+app.set('port', process.env.PORT || 4000);
+
+
+//Middlewares. Se usan aantes de llegar a las rutas
+app.use(cors());
+app.use(express.json());//convertir de js a json
+//app.use('/api/users',require('./routes/user') )
+//app.use('/api/event',require('./routes/event'))
+
+
+//Routes
+
+module.exports = app;
